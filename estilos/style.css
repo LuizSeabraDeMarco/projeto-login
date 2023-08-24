@@ -35,10 +35,13 @@ section#login{
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+
+    transition: width .3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#img {
-    background-image: url("../img/imagem.jpg");
+    background-image: url("../img/mobile.jpg");
     height: 200px;
     background-size: cover;
     background-position: center center;
