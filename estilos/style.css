@@ -33,11 +33,11 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 
     transition: width .3s, height 0.3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#img {
@@ -68,8 +68,32 @@ div.campo{
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
+    border: 1px solid #602c82dc;
+}
+div.campo >input:focus-within{
+    background-color: white;
+    border: none;
+}
+
+label > span{
+    color: white;
+    padding: 5px;
+    border-radius: 30px;
+    font-size: 2em;
+    display: block;
+    width: 40px;
+    background-color: black;
+    text-align: center;
+}
+input{
+    background-color: #acd6d5;
+    font-size: 1em;
+    width:calc(100% - 44.5px);
+    height: 100%;
+    border-radius: 8px;
+    transform: translateY(-2.8px);
 }
 
 .botao{
@@ -108,4 +132,3 @@ span#esqueci{
     font-size: 0.8em;
     display: inline;
 }
-
